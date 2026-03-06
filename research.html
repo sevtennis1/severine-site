@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Severine Toussaert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Severine Toussaert</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h2 class="section-header">Research</h2>
+
+        <!-- Filter Chips -->
+        <div class="filter-chips">
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="behavioral">Behavioral Econ</button>
+            <button class="filter-chip" data-filter="metascience">Metascience</button>
+            <button class="filter-chip" data-filter="health">Public Health</button>
+        </div>
+
+        <!-- Behavioral Economics -->
+        <div class="research-category" data-category="behavioral">
+            <h3 class="category-title">Behavioral Economics</h3>
+
+            <!-- Working Papers first (reverse chronological) -->
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Behavioral Economics Paper Title</h4>
+                </div>
+                <p class="paper-authors">with Coauthor Three</p>
+                <p class="paper-venue">Working Paper</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn slides">Slides</a>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Stochastic Dominance and Demand for Surprise</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-authors">with Coauthor Name</p>
+                <p class="paper-venue">Working Paper</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn slides">Slides</a>
+                </div>
+                <div class="story-panel">
+                    <h4>How it started</h4>
+                    <p>Why do people sometimes prefer not to know the outcome until later? This project grew from puzzling over gift-giving behavior and surprise parties.</p>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Revealing Temptation Through Menu Choice: Field Evidence</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-authors">with Coauthor Name</p>
+                <p class="paper-venue">Working Paper</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn slides">Slides</a>
+                    <a href="#" class="paper-btn secondary">Pre-reg</a>
+                </div>
+                <div class="story-panel">
+                    <h4>The journey</h4>
+                    <p>Taking the lab result to the field took 4 years. Finding the right field partner was the hardest part--we went through three before it clicked.</p>
+                </div>
+            </div>
+
+            <!-- Published Papers (reverse chronological) -->
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Eliciting Temptation and Self-Control Through Menu Choices: A Lab Experiment</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-authors">Severine Toussaert</p>
+                <p class="paper-venue">Econometrica, 2018, 86(3): 859-889</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn slides">Slides</a>
+                    <a href="#" class="paper-btn data">Data</a>
+                    <a href="#" class="paper-btn secondary">Appendix</a>
+                    <a href="#" class="paper-btn secondary">OSF</a>
+                    <a href="#" class="paper-btn secondary">Cite</a>
+                </div>
+                <div class="story-panel">
+                    <h4>How it started</h4>
+                    <p>This project began during my PhD when I became fascinated by the gap between what people say they want and what they actually choose when facing temptation. I spent 6 months just trying to find the right experimental design.</p>
+                    <h4>Submission journey</h4>
+                    <p class="submission-history">
+                        AER <span class="dr">DR</span> &rarr; QJE <span class="dr">DR</span> &rarr; Econometrica <span class="rr">R&R</span> &rarr; <span class="accepted">Accepted</span>
+                    </p>
+                    <h4>What I learned</h4>
+                    <p>The first dataset I collected (lovingly named "AwesomeData") was actually terrible. I had to completely redesign the experiment and start over.</p>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Cautious Deferral, Indecisiveness, and Preference for Flexibility</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-authors">Severine Toussaert</p>
+                <p class="paper-venue">Journal of Economic Theory, 2017</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn slides">Slides</a>
+                    <a href="#" class="paper-btn secondary">Cite</a>
+                </div>
+                <div class="story-panel">
+                    <h4>How it started</h4>
+                    <p>What happens when people are genuinely unsure about their preferences? This question came from observing my own decision paralysis in restaurants.</p>
+                    <h4>Submission journey</h4>
+                    <p class="submission-history">
+                        JET <span class="rr">R&R</span> &rarr; <span class="accepted">Accepted</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <h4 class="paper-title">Intention-Based Reciprocity and Signaling of Intentions</h4>
+                <p class="paper-authors">Severine Toussaert</p>
+                <p class="paper-venue">Journal of Economic Behavior & Organization, 2017</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn data">Data</a>
+                    <a href="#" class="paper-btn secondary">Cite</a>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <h4 class="paper-title">The Snack Choice Experiment</h4>
+                <p class="paper-venue">Working Paper</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metascience -->
+        <div class="research-category" data-category="metascience">
+            <h3 class="category-title">Metascience</h3>
+
+            <!-- Working Papers / Forthcoming first -->
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Pre-registration and Pre-Analysis Plans in Experimental Economics</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-authors">with Coauthors</p>
+                <p class="paper-venue">R&R at Experimental Economics</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn slides">Slides</a>
+                    <a href="#" class="paper-btn secondary">Pre-reg</a>
+                </div>
+                <div class="story-panel">
+                    <h4>Origin</h4>
+                    <p>Started as a side project when reviewing papers and noticing how few included pre-registrations. We wondered: is this changing?</p>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Open Science, Closed Peer Review?</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-authors">with Coauthors</p>
+                <p class="paper-venue">Forthcoming, Journal of the Economic Science Association</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn data">Data</a>
+                    <a href="#" class="paper-btn secondary">OSF</a>
+                </div>
+                <div class="story-panel">
+                    <h4>Submission journey</h4>
+                    <p class="submission-history">
+                        PNAS <span class="dr">DR</span> &rarr; Science <span class="dr">DR</span> &rarr; Nature Human Behaviour <span class="dr">DR</span> &rarr; JESA <span class="rr">R&R</span> &rarr; <span class="accepted">Accepted</span>
+                    </p>
+                    <h4>What I learned</h4>
+                    <p>The irony of a paper about peer review getting desk rejected taught me a lot about peer review.</p>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Six Journal Rejections and a Major Rethink</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-venue">Nature Opinion, October 2025</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">Read</a>
+                </div>
+                <div class="story-panel">
+                    <h4>Why I wrote this</h4>
+                    <p>I wanted to show what the publication process really looks like. Six rejections sounds rough, but it's actually pretty normal. Most researchers don't talk about this publicly.</p>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <h4 class="paper-title">Peer Review in Economics: Where Are We?</h4>
+                <p class="paper-authors">with Coauthors</p>
+                <p class="paper-venue">In Progress</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn slides">Slides</a>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <h4 class="paper-title">Lab2 Metascience Incubator</h4>
+                <p class="paper-authors">with Lab2 Team</p>
+                <p class="paper-venue">Ongoing Project</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn secondary">Project Page</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Public Health -->
+        <div class="research-category" data-category="health">
+            <h3 class="category-title">Public Health</h3>
+
+            <div class="paper-card">
+                <div class="paper-header">
+                    <h4 class="paper-title">Gamifying a Leading Smartphone App for Smoking Cessation: A Randomized Controlled Trial</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-authors">with Smokefree Team</p>
+                <p class="paper-venue">JMIR Serious Games, 2023</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn data">Data</a>
+                    <a href="#" class="paper-btn secondary">OSF</a>
+                    <a href="#" class="paper-btn secondary">Cite</a>
+                </div>
+                <div class="story-panel">
+                    <h4>The Inner Dragon project</h4>
+                    <p>We designed a game where users nurture a dragon that grows as they resist cigarettes. Turns out gamification in health is harder than it looks--most of our initial ideas failed pilot testing.</p>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <h4 class="paper-title">Peer Mentoring for Smoking Cessation: Results of a Randomized Controlled Trial</h4>
+                <p class="paper-authors">with Smokefree Team</p>
+                <p class="paper-venue">Nicotine & Tobacco Research, 2022</p>
+                <div class="paper-buttons">
+                    <a href="#" class="paper-btn pdf">PDF</a>
+                    <a href="#" class="paper-btn secondary">OSF</a>
+                    <a href="#" class="paper-btn secondary">Cite</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Graveyard Section -->
+        <section class="graveyard-section">
+            <div class="section-container">
+                <h2 class="section-header">The Graveyard</h2>
+                <p class="graveyard-intro">
+                    Research is full of dead ends. Here are some projects that didn't make it--and what I learned from them.
+                </p>
+
+                <div class="graveyard-grid">
+                    <div class="graveyard-item">
+                        <h4>Meta-Analysis of Commitment Device Studies</h4>
+                        <p class="status">On hold since 2021</p>
+                        <p>Started with enthusiasm, got 200 papers coded, then realized someone else published almost the same thing. Pivoted to peer review instead.</p>
+                    </div>
+
+                    <div class="graveyard-item">
+                        <h4>SMS Nudges for Medication Adherence</h4>
+                        <p class="status">Stopped 2020 - Pilot stage</p>
+                        <p>Partner organization changed leadership mid-project. The pilot data looked promising, but sometimes partnerships don't work out.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Severine Toussaert &middot; <a href="mailto:severine.toussaert@economics.ox.ac.uk">severine.toussaert@economics.ox.ac.uk</a></p>
+    </footer>
+
+    <script>
+        // Toggle story panel visibility
+        function toggleStory(badge) {
+            const card = badge.closest('.paper-card');
+            const panel = card.querySelector('.story-panel');
+            if (panel) {
+                panel.classList.toggle('visible');
+                // Update badge text
+                const isVisible = panel.classList.contains('visible');
+                badge.innerHTML = isVisible
+                    ? '<span class="icon">📖</span> Hide'
+                    : '<span class="icon">📖</span> Story';
+            }
+        }
+
+        // Filter functionality
+        const filterChips = document.querySelectorAll('.filter-chip');
+        const categories = document.querySelectorAll('.research-category');
+
+        filterChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                // Update active state
+                filterChips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+
+                const filter = chip.dataset.filter;
+
+                categories.forEach(cat => {
+                    if (filter === 'all' || cat.dataset.category === filter) {
+                        cat.style.display = 'block';
+                    } else {
+                        cat.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

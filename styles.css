@@ -1,0 +1,735 @@
+/* ========================================
+   REFINED MOCKUP - Shared Styles
+   Academic Warm base + Muted Iceberg accents
+   Multi-page layout with story badges
+   ======================================== */
+
+:root {
+    /* Academic Warm - Primary Palette */
+    --cream: #F8F1E8;
+    --cream-dark: #F0E6D8;
+    --warm-gray: #6B6560;
+    --charcoal: #2D2926;
+    --coral: #E07A5F;
+    --coral-light: #F4A090;
+    --soft-blue: #5E8B9C;
+    --soft-blue-light: #A8C5CE;
+    --gold: #C9A962;
+    --white: #FFFFFF;
+
+    /* Muted Iceberg - Secondary Palette */
+    --slate-light: #E8EDF0;
+    --slate-mid: #8FA3B0;
+    --slate-deep: #4A6B7C;
+    --slate-dark: #3D5A6C;
+    --slate-abyss: #2A4A5A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ==================== NAVIGATION ==================== */
+nav {
+    background: var(--white);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav .nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--warm-gray);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+    position: relative;
+}
+
+nav a:hover, nav a.active {
+    color: var(--coral);
+}
+
+nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--coral);
+}
+
+/* ==================== MAIN LAYOUT ==================== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* ==================== TYPOGRAPHY ==================== */
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.section-header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--coral);
+    display: inline-block;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+.hero-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: var(--cream-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--warm-gray);
+    font-size: 0.9rem;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.hero-content .title {
+    font-size: 1.2rem;
+    color: var(--coral);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hero-content .affiliations {
+    font-size: 0.95rem;
+    color: var(--warm-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.hero-content .affiliations a {
+    color: var(--soft-blue);
+    text-decoration: none;
+}
+
+.hero-content .affiliations a:hover {
+    text-decoration: underline;
+}
+
+.hero-content .bio {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Project Links */
+.projects {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: var(--white);
+    border: 1px solid var(--cream-dark);
+    border-radius: 6px;
+    color: var(--charcoal);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.project-link:hover {
+    border-color: var(--coral);
+    box-shadow: 0 4px 12px rgba(224, 122, 95, 0.15);
+}
+
+.project-link .icon {
+    font-size: 1.1rem;
+}
+
+/* Contact Info */
+.contact-info {
+    font-size: 0.95rem;
+    color: var(--warm-gray);
+}
+
+.contact-info a {
+    color: var(--soft-blue);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== RESEARCH PAGE ==================== */
+
+/* Filter Chips */
+.filter-chips {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.filter-chip {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid var(--cream-dark);
+    background: var(--white);
+    border-radius: 100px;
+    color: var(--warm-gray);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-chip:hover {
+    border-color: var(--coral-light);
+    color: var(--coral);
+}
+
+.filter-chip.active {
+    background: var(--charcoal);
+    border-color: var(--charcoal);
+    color: var(--white);
+}
+
+/* Research Category */
+.research-category {
+    margin-bottom: 3rem;
+}
+
+.category-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category-title .count {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    color: var(--warm-gray);
+    font-weight: 400;
+}
+
+/* Paper Cards */
+.paper-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.paper-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.paper-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.paper-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.paper-authors {
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+    margin-bottom: 0.5rem;
+}
+
+.paper-venue {
+    font-size: 0.9rem;
+    color: var(--soft-blue);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.paper-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.paper-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid;
+}
+
+.paper-btn.pdf {
+    background: var(--coral);
+    border-color: var(--coral);
+    color: var(--white);
+}
+
+.paper-btn.pdf:hover {
+    background: #c96a52;
+}
+
+.paper-btn.slides {
+    background: var(--soft-blue);
+    border-color: var(--soft-blue);
+    color: var(--white);
+}
+
+.paper-btn.slides:hover {
+    background: #4d7a8a;
+}
+
+.paper-btn.data, .paper-btn.code {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+}
+
+.paper-btn.secondary {
+    background: transparent;
+    border-color: var(--cream-dark);
+    color: var(--warm-gray);
+}
+
+.paper-btn.secondary:hover {
+    border-color: var(--coral);
+    color: var(--coral);
+}
+
+/* Story Badge */
+.story-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.6rem;
+    background: var(--slate-light);
+    border-radius: 100px;
+    font-size: 0.75rem;
+    color: var(--slate-deep);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.story-badge:hover {
+    background: var(--slate-mid);
+    color: var(--white);
+}
+
+.story-badge .icon {
+    font-size: 0.85rem;
+}
+
+/* Story Panel */
+.story-panel {
+    display: none;
+    margin-top: 1rem;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, var(--slate-light) 0%, var(--cream-dark) 100%);
+    border-radius: 8px;
+    border-left: 3px solid var(--slate-deep);
+    animation: slideDown 0.3s ease;
+}
+
+.story-panel.visible {
+    display: block;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.story-panel h4 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--slate-deep);
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.story-panel h4:first-child {
+    margin-top: 0;
+}
+
+.story-panel p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--charcoal);
+}
+
+.submission-history {
+    font-family: monospace;
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    background: var(--white);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.submission-history .dr {
+    color: #c0392b;
+}
+
+.submission-history .rr {
+    color: var(--gold);
+}
+
+.submission-history .accepted {
+    color: #27ae60;
+}
+
+/* ==================== CV PAGE ==================== */
+.cv-intro {
+    margin-bottom: 2rem;
+}
+
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--coral);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.download-cv:hover {
+    background: #c96a52;
+}
+
+.cv-section {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cv-section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--coral);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--cream-dark);
+}
+
+.cv-grid {
+    display: grid;
+    gap: 0;
+}
+
+.cv-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1.5rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--cream-dark);
+}
+
+.cv-item:last-child {
+    border-bottom: none;
+}
+
+.cv-year {
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+}
+
+.cv-content strong {
+    font-weight: 600;
+    color: var(--charcoal);
+}
+
+.cv-content p {
+    font-size: 0.95rem;
+    color: var(--warm-gray);
+    margin-top: 0.25rem;
+}
+
+/* ==================== MEDIA PAGE ==================== */
+.media-intro {
+    font-size: 1.05rem;
+    color: var(--warm-gray);
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.media-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.media-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.media-card-image {
+    height: 160px;
+    background: linear-gradient(135deg, var(--soft-blue) 0%, var(--coral) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.media-card-content {
+    padding: 1.5rem;
+}
+
+.media-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.media-card p {
+    font-size: 0.95rem;
+    color: var(--warm-gray);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.media-card a {
+    color: var(--coral);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.media-card a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== GRAVEYARD SECTION ==================== */
+.graveyard-section {
+    background: linear-gradient(180deg, var(--slate-dark) 0%, var(--slate-abyss) 100%);
+    padding: 3rem 2rem;
+    margin: 3rem -2rem -3rem;
+    color: var(--white);
+}
+
+.graveyard-section .section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.graveyard-section .section-header {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom-color: var(--slate-mid);
+}
+
+.graveyard-intro {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.graveyard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.graveyard-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.graveyard-item h4 {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.25rem;
+}
+
+.graveyard-item .status {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--coral-light);
+    margin-bottom: 0.75rem;
+}
+
+.graveyard-item p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+footer a {
+    color: var(--coral-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Research page with graveyard needs no footer margin */
+body:has(.graveyard-section) footer {
+    margin-top: 0;
+}
+
+/* Ensure main has no bottom padding when graveyard present */
+main:has(.graveyard-section) {
+    padding-bottom: 0;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-photo {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-content .title {
+        text-align: center;
+    }
+
+    .cv-item {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+
+    .cv-year {
+        font-weight: 600;
+        color: var(--soft-blue);
+    }
+
+    .paper-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .story-badge {
+        align-self: flex-start;
+    }
+}
