@@ -160,10 +160,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-content .affiliations {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--warm-gray);
     margin-bottom: 1.5rem;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
 .hero-content .affiliations a {
@@ -193,13 +193,13 @@ h1, h2, h3, h4, h5 {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.6rem 1rem;
+    padding: 0.7rem 1.2rem;
     background: var(--white);
     border: 1px solid var(--cream-dark);
     border-radius: 6px;
     color: var(--charcoal);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: all 0.2s;
 }
 
@@ -227,7 +227,65 @@ h1, h2, h3, h4, h5 {
     text-decoration: underline;
 }
 
+/* ==================== CONTACT SECTION (homepage) ==================== */
+.contact-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--cream-dark);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 1.4rem 1.6rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.contact-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+    line-height: 1.7;
+}
+
+.contact-card a {
+    color: var(--soft-blue);
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
 /* ==================== RESEARCH PAGE ==================== */
+
+.research-intro {
+    margin-bottom: 2rem;
+}
+
+.research-intro-story {
+    background: var(--white);
+    border-left: 3px solid var(--coral);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.4rem;
+    font-size: 1.05rem;
+    color: var(--charcoal);
+    line-height: 1.8;
+}
 
 /* Filter Chips */
 .filter-chips {
@@ -238,8 +296,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .filter-chip {
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
+    padding: 0.6rem 1.3rem;
+    font-size: 0.95rem;
     font-weight: 500;
     border: 1px solid var(--cream-dark);
     background: var(--white);
@@ -383,10 +441,10 @@ h1, h2, h3, h4, h5 {
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
-    padding: 0.25rem 0.6rem;
+    padding: 0.35rem 0.8rem;
     background: var(--slate-light);
     border-radius: 100px;
-    font-size: 0.75rem;
+    font-size: 0.88rem;
     color: var(--slate-deep);
     cursor: pointer;
     transition: all 0.2s;
@@ -453,10 +511,12 @@ h1, h2, h3, h4, h5 {
 .submission-history {
     font-family: monospace;
     font-size: 0.85rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.6rem;
     background: var(--white);
     border-radius: 4px;
-    display: inline-block;
+    display: block;
+    line-height: 1.9;
+    word-break: break-word;
 }
 
 .submission-history .dr {
@@ -469,6 +529,89 @@ h1, h2, h3, h4, h5 {
 
 .submission-history .accepted {
     color: #27ae60;
+}
+
+/* Category intro — full-width card, soft-blue left border */
+.category-intro {
+    background: var(--white);
+    border-left: 3px solid var(--soft-blue);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.4rem;
+    font-size: 1rem;
+    color: var(--warm-gray);
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+}
+
+/* Research subsections (within a category) */
+.research-subsection {
+    margin-bottom: 2.5rem;
+}
+
+.subsection-title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--coral);
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--cream-dark);
+}
+
+/* Subsection description — full-width card, lighter soft-blue border */
+.subsection-desc {
+    background: var(--white);
+    border-left: 3px solid var(--soft-blue-light);
+    border-radius: 0 8px 8px 0;
+    padding: 0.9rem 1.3rem;
+    font-size: 0.97rem;
+    color: var(--warm-gray);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+/* Inner Dragon feature block — white card with shadow, matching the card family */
+.inner-dragon-feature {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    background: var(--white);
+    border-left: 3px solid var(--soft-blue-light);
+    border-radius: 0 10px 10px 0;
+    padding: 1.4rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.inner-dragon-feature img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
+}
+
+.inner-dragon-feature-text p {
+    font-size: 0.95rem;
+    color: var(--warm-gray);
+    line-height: 1.8;
+}
+
+.inner-dragon-feature-text strong {
+    color: var(--charcoal);
+}
+
+@media (max-width: 768px) {
+    .inner-dragon-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .inner-dragon-feature img {
+        max-width: 130px;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 /* ==================== CV PAGE ==================== */

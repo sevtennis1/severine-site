@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Severine Toussaert</title>
+    <title>Research | Séverine Toussaert</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Severine Toussaert</a>
+            <a href="index.html" class="logo">Séverine Toussaert</a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html" class="active">Research</a></li>
@@ -23,31 +23,27 @@
     <main>
         <h2 class="section-header">Research</h2>
 
+        <div class="research-intro">
+            <p class="research-intro-story">
+                <strong>Behind the scenes:</strong> I post submission histories for my papers (with co-author approval) along with how each project started and what I learned. Click any <span class="story-badge" style="pointer-events:none;vertical-align:middle;font-size:0.85rem;">📖 Story</span> to open the panel. <em>DR</em> stands for "Desk Reject".
+            </p>
+        </div>
+
         <!-- Filter Chips -->
         <div class="filter-chips">
             <button class="filter-chip active" data-filter="all">All</button>
             <button class="filter-chip" data-filter="behavioral">Behavioral Econ</button>
             <button class="filter-chip" data-filter="metascience">Metascience</button>
             <button class="filter-chip" data-filter="health">Public Health</button>
+            <button class="filter-chip" data-filter="graveyard">🪦 Graveyard</button>
         </div>
 
         <!-- Behavioral Economics -->
         <div class="research-category" data-category="behavioral">
             <h3 class="category-title">Behavioral Economics</h3>
+            <p class="category-intro">My work in behavioral economics explores how people form preferences and act on them—especially when those decisions involve temptation, self-control, or genuine uncertainty about what one wants. The theory papers develop axiomatic models of these phenomena; the experimental papers test and extend them in the lab and the field. A common thread is the gap between what people say they want and what they actually choose.</p>
 
             <!-- Working Papers first (reverse chronological) -->
-            <div class="paper-card">
-                <div class="paper-header">
-                    <h4 class="paper-title">Behavioral Economics Paper Title</h4>
-                </div>
-                <p class="paper-authors">with Coauthor Three</p>
-                <p class="paper-venue">Working Paper</p>
-                <div class="paper-buttons">
-                    <a href="#" class="paper-btn pdf">PDF</a>
-                    <a href="#" class="paper-btn slides">Slides</a>
-                </div>
-            </div>
-
             <div class="paper-card">
                 <div class="paper-header">
                     <h4 class="paper-title">Stochastic Dominance and Demand for Surprise</h4>
@@ -95,7 +91,7 @@
                         <span class="icon">📖</span> Story
                     </span>
                 </div>
-                <p class="paper-authors">Severine Toussaert</p>
+                <p class="paper-authors">Séverine Toussaert</p>
                 <p class="paper-venue">Econometrica, 2018, 86(3): 859-889</p>
                 <div class="paper-buttons">
                     <a href="#" class="paper-btn pdf">PDF</a>
@@ -110,7 +106,7 @@
                     <p>This project began during my PhD when I became fascinated by the gap between what people say they want and what they actually choose when facing temptation. I spent 6 months just trying to find the right experimental design.</p>
                     <h4>Submission journey</h4>
                     <p class="submission-history">
-                        AER <span class="dr">DR</span> &rarr; QJE <span class="dr">DR</span> &rarr; Econometrica <span class="rr">R&R</span> &rarr; <span class="accepted">Accepted</span>
+                        QJE <span class="dr">DR</span> &rarr; Econometrica <span class="rr">R&R</span> &rarr; <span class="accepted">Accepted</span>
                     </p>
                     <h4>What I learned</h4>
                     <p>The first dataset I collected (lovingly named "AwesomeData") was actually terrible. I had to completely redesign the experiment and start over.</p>
@@ -119,13 +115,13 @@
 
             <div class="paper-card">
                 <div class="paper-header">
-                    <h4 class="paper-title">Cautious Deferral, Indecisiveness, and Preference for Flexibility</h4>
+                    <h4 class="paper-title">Choice Deferral, Indecisiveness and Preference for Flexibility</h4>
                     <span class="story-badge" onclick="toggleStory(this)">
                         <span class="icon">📖</span> Story
                     </span>
                 </div>
-                <p class="paper-authors">Severine Toussaert</p>
-                <p class="paper-venue">Journal of Economic Theory, 2017</p>
+                <p class="paper-authors">with Leonardo Pejsachowicz</p>
+                <p class="paper-venue">Journal of Economic Theory, Vol. 170 (2017), 417-425</p>
                 <div class="paper-buttons">
                     <a href="#" class="paper-btn pdf">PDF</a>
                     <a href="#" class="paper-btn slides">Slides</a>
@@ -136,34 +132,40 @@
                     <p>What happens when people are genuinely unsure about their preferences? This question came from observing my own decision paralysis in restaurants.</p>
                     <h4>Submission journey</h4>
                     <p class="submission-history">
-                        JET <span class="rr">R&R</span> &rarr; <span class="accepted">Accepted</span>
+                        Econometrica <span class="dr">Reject</span> &rarr; RES <span class="dr">Reject</span> &rarr; JET <span class="accepted">Accepted</span>
                     </p>
+                    <p style="font-size:0.88rem; color: var(--warm-gray); margin-top: 0.4rem;">The Econometrica rejection was described as "the nicest rejection."</p>
                 </div>
             </div>
 
             <div class="paper-card">
-                <h4 class="paper-title">Intention-Based Reciprocity and Signaling of Intentions</h4>
-                <p class="paper-authors">Severine Toussaert</p>
-                <p class="paper-venue">Journal of Economic Behavior & Organization, 2017</p>
+                <div class="paper-header">
+                    <h4 class="paper-title">Intention-Based Reciprocity and Signaling of Intentions</h4>
+                    <span class="story-badge" onclick="toggleStory(this)">
+                        <span class="icon">📖</span> Story
+                    </span>
+                </div>
+                <p class="paper-authors">Séverine Toussaert</p>
+                <p class="paper-venue">Journal of Economic Behavior & Organization, Vol. 137 (2017), 132-144</p>
                 <div class="paper-buttons">
                     <a href="#" class="paper-btn pdf">PDF</a>
                     <a href="#" class="paper-btn data">Data</a>
                     <a href="#" class="paper-btn secondary">Cite</a>
                 </div>
-            </div>
-
-            <div class="paper-card">
-                <h4 class="paper-title">The Snack Choice Experiment</h4>
-                <p class="paper-venue">Working Paper</p>
-                <div class="paper-buttons">
-                    <a href="#" class="paper-btn pdf">PDF</a>
+                <div class="story-panel">
+                    <h4>Submission journey</h4>
+                    <p class="submission-history">
+                        GEB <span class="dr">Reject</span> &rsaquo; MS <span class="dr">DR</span> &rsaquo; JEEA <span class="dr">DR</span> &rsaquo; Economic Journal <span class="dr">Reject</span> &rsaquo; AEJ Micro <span class="dr">DR</span> &rsaquo; European Economic Review <span class="dr">Reject</span> &rsaquo; JEBO <span class="accepted">cond. accepted</span>
+                    </p>
                 </div>
             </div>
+
         </div>
 
         <!-- Metascience -->
         <div class="research-category" data-category="metascience">
             <h3 class="category-title">Metascience</h3>
+            <p class="category-intro">I am passionate about research transparency and the inner workings of the publication process. This line of work asks how economics research is produced, evaluated, and shared—and how we might make these processes more open. It includes empirical studies of peer review, a survey of pre-registration practices, and a personal essay on what rejection history can teach us.</p>
 
             <!-- Working Papers / Forthcoming first -->
             <div class="paper-card">
@@ -236,49 +238,93 @@
                 </div>
             </div>
 
-            <div class="paper-card">
-                <h4 class="paper-title">Lab2 Metascience Incubator</h4>
-                <p class="paper-authors">with Lab2 Team</p>
-                <p class="paper-venue">Ongoing Project</p>
-                <div class="paper-buttons">
-                    <a href="#" class="paper-btn secondary">Project Page</a>
-                </div>
-            </div>
         </div>
 
         <!-- Public Health -->
         <div class="research-category" data-category="health">
             <h3 class="category-title">Public Health</h3>
+            <p class="category-intro">Since 2015, I have been working with a team of health economists, public health researchers, biostatisticians, and game designers on smoking cessation. Our aim is to improve mHealth technologies using insights from behavioral economics, clinical psychology, and game design—to help smokers quit for good. More generally, I am interested in app-delivered behaviour change and how behavioral science can improve health technology.</p>
 
-            <div class="paper-card">
-                <div class="paper-header">
-                    <h4 class="paper-title">Gamifying a Leading Smartphone App for Smoking Cessation: A Randomized Controlled Trial</h4>
-                    <span class="story-badge" onclick="toggleStory(this)">
-                        <span class="icon">📖</span> Story
-                    </span>
+            <!-- Peer Mentoring -->
+            <div class="research-subsection">
+                <h4 class="subsection-title">Peer Mentoring</h4>
+                <p class="subsection-desc">Our first line of work examines peer support interventions for smoking cessation. In one trial, we studied the effect of peer mentoring delivered by former smokers via text messages. We then extended this into a systematic review and meta-analysis covering the broader peer-support literature.</p>
+
+                <div class="paper-card">
+                    <h4 class="paper-title">Effectiveness of Peer-Support Interventions for Smoking Cessation: A Systematic Review and Meta-Analysis</h4>
+                    <p class="paper-authors">with P Yuan, JL Westmaas, J Thrul, JF Hilton, JS White</p>
+                    <p class="paper-venue">Nicotine &amp; Tobacco Research, 2023 <em>(Editor's Choice)</em></p>
+                    <div class="paper-buttons">
+                        <a href="#" class="paper-btn pdf">PDF</a>
+                        <a href="https://osf.io/4agku/" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">OSF</a>
+                    </div>
                 </div>
-                <p class="paper-authors">with Smokefree Team</p>
-                <p class="paper-venue">JMIR Serious Games, 2023</p>
-                <div class="paper-buttons">
-                    <a href="#" class="paper-btn pdf">PDF</a>
-                    <a href="#" class="paper-btn data">Data</a>
-                    <a href="#" class="paper-btn secondary">OSF</a>
-                    <a href="#" class="paper-btn secondary">Cite</a>
-                </div>
-                <div class="story-panel">
-                    <h4>The Inner Dragon project</h4>
-                    <p>We designed a game where users nurture a dragon that grows as they resist cigarettes. Turns out gamification in health is harder than it looks--most of our initial ideas failed pilot testing.</p>
+
+                <div class="paper-card">
+                    <h4 class="paper-title">Peer Mentoring and Automated Text Messages for Smoking Cessation: A Randomized Pilot Trial</h4>
+                    <p class="paper-authors">with JS White, J Thrul, J Bontemps-Jones, L Abroms, JL Westmaas</p>
+                    <p class="paper-venue">Nicotine &amp; Tobacco Research, 2020, 22(3), 371–380</p>
+                    <div class="paper-buttons">
+                        <a href="https://academic.oup.com/ntr/article-abstract/22/3/371/5402006" class="paper-btn pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                        <a href="https://osf.io/8kwpe/" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">OSF</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="paper-card">
-                <h4 class="paper-title">Peer Mentoring for Smoking Cessation: Results of a Randomized Controlled Trial</h4>
-                <p class="paper-authors">with Smokefree Team</p>
-                <p class="paper-venue">Nicotine & Tobacco Research, 2022</p>
-                <div class="paper-buttons">
-                    <a href="#" class="paper-btn pdf">PDF</a>
-                    <a href="#" class="paper-btn secondary">OSF</a>
-                    <a href="#" class="paper-btn secondary">Cite</a>
+            <!-- Inner Dragon -->
+            <div class="research-subsection">
+                <h4 class="subsection-title">Inner Dragon Game</h4>
+
+                <div class="inner-dragon-feature">
+                    <img src="https://i0.wp.com/severinetoussaert.com/wp-content/uploads/2023/07/Dragon.jpeg?resize=300%2C534" alt="Screenshot of the Inner Dragon game in the Smoke Free app">
+                    <div class="inner-dragon-feature-text">
+                        <p>Our second set of trials focuses on <strong>gamification</strong> as a way to increase user engagement with mHealth apps. Working with <strong>Smoke Free</strong>—one of the leading smartphone apps for smoking cessation—we developed a game called <strong>Inner Dragon</strong>, which gives users a dragon companion that grows as they accumulate smoke-free time.</p>
+                        <p style="margin-top: 0.8rem;">We completed a design and feasibility evaluation, followed by a pilot randomised trial on engagement outcomes. Smoke Free was approved for prescription in Germany in February 2023, with the Inner Dragon game live in the app since then. Future work will focus on a full randomised trial evaluating impact on medium-term smoking abstinence.</p>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <h4 class="paper-title">Evaluating the Impact of a Game (Inner Dragon) on User Engagement Within a Leading Smartphone App for Smoking Cessation: Randomized Controlled Trial</h4>
+                    <p class="paper-authors">with JS White, BR Raiff, MK Salem, AY Chiang, D Crane, E Warrender, C Lyles, LC Abroms, JL Westmaas, J Thrul</p>
+                    <p class="paper-venue">JMIR, 2024</p>
+                    <div class="paper-buttons">
+                        <a href="#" class="paper-btn pdf">PDF</a>
+                        <a href="https://osf.io/cfbqx/" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">OSF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <h4 class="paper-title">Gamifying a Leading Smartphone App for Smoking Cessation: Design and Feasibility Evaluation of Inner Dragon</h4>
+                    <p class="paper-authors">with JS White, MK Salem, JL Westmaas, BR Raiff, C Lyles, LC Abroms, J Thrul</p>
+                    <p class="paper-venue">JMIR Serious Games, 2023</p>
+                    <div class="paper-buttons">
+                        <a href="https://preprints.jmir.org/preprint/46602" class="paper-btn pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                        <a href="https://osf.io/cfbqx/" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">OSF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COVID-19 -->
+            <div class="research-subsection">
+                <h4 class="subsection-title">COVID-19</h4>
+                <p class="subsection-desc">During the pandemic, I took part in a project led by Johannes Abeler examining the acceptability of contact-tracing apps across countries, as well as writing a News &amp; Views piece on how to boost uptake of such apps.</p>
+
+                <div class="paper-card">
+                    <h4 class="paper-title">Upping Uptake of COVID Contact Tracing Apps</h4>
+                    <p class="paper-authors">Séverine Toussaert</p>
+                    <p class="paper-venue">Nature Human Behaviour, 2021, 5, 183–184 <em>(News &amp; Views)</em></p>
+                    <div class="paper-buttons">
+                        <a href="#" class="paper-btn pdf">PDF</a>
+                    </div>
+                </div>
+
+                <div class="paper-card">
+                    <h4 class="paper-title">Acceptability of App-Based Contact Tracing for COVID-19: Cross-Country Survey Study</h4>
+                    <p class="paper-authors">with S Altmann, L Milsom, H Zillessen, R Blasone, F Gerdon, R Bach, F Kreuter, D Nosenzo, J Abeler</p>
+                    <p class="paper-venue">JMIR mHealth and uHealth, 2020, 8(8): e19857</p>
+                    <div class="paper-buttons">
+                        <a href="#" class="paper-btn pdf">PDF</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -309,7 +355,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Severine Toussaert &middot; <a href="mailto:severine.toussaert@economics.ox.ac.uk">severine.toussaert@economics.ox.ac.uk</a></p>
+        <p>&copy; 2026 Séverine Toussaert &middot; <a href="mailto:severine.toussaert@economics.ox.ac.uk">severine.toussaert@economics.ox.ac.uk</a></p>
     </footer>
 
     <script>
@@ -330,6 +376,7 @@
         // Filter functionality
         const filterChips = document.querySelectorAll('.filter-chip');
         const categories = document.querySelectorAll('.research-category');
+        const graveyardSection = document.querySelector('.graveyard-section');
 
         filterChips.forEach(chip => {
             chip.addEventListener('click', () => {
@@ -346,6 +393,10 @@
                         cat.style.display = 'none';
                     }
                 });
+
+                if (graveyardSection) {
+                    graveyardSection.style.display = (filter === 'all' || filter === 'graveyard') ? '' : 'none';
+                }
             });
         });
     </script>
