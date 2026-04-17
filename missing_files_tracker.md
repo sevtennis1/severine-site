@@ -1,24 +1,24 @@
 # Missing Files for Research Page
 
-Updated 2026-04-04. Most placeholder links have been resolved. What remains needs files only Sev can provide.
+Updated 2026-04-16. Major batch of updates from Sev's email resolved.
 
 ---
 
 ## Still needed from Sev
 
-### Behavioral Economics
-
-| Paper | What's needed |
-|-------|---------------|
-| Stochastic Dominance and Demand for Surprise | **Slides** — the only placeholder left for this paper |
-
 ### Metascience
 
 | Paper | What's needed |
 |-------|---------------|
-| Pre-registration and Pre-Analysis Plans (R&R at Experimental Economics) | **PDF** (working paper draft) and **Slides** |
-| Open Science, Closed Peer Review? (Forthcoming, JESA) | **PDF** (accepted manuscript or preprint) |
-| Peer Review in Economics: Where Are We? | **Slides** |
+| Peer Review in Economics: Where Are We? | **Slides** — no slides available per Sev |
+
+### Other
+
+| Item | What's needed |
+|------|---------------|
+| Favicon | Sev needs to decide what to use |
+| Catherine Hasted event | Additional materials (Sev cc'd to request) |
+| BTS stories & graveyard content | Sev will send transcript from ChatGPT conversation |
 
 ---
 
@@ -28,11 +28,19 @@ Updated 2026-04-04. Most placeholder links have been resolved. What remains need
 - Econometrica 2018 **Cite** → auto-generated BibTeX, copies to clipboard
 - JET 2017 **Cite** → auto-generated BibTeX, copies to clipboard
 - JEBO 2017 **Cite** → auto-generated BibTeX, copies to clipboard
-- Six Journal Rejections (Nature Opinion) **Read** → linked to nature.com article
+- Six Journal Rejections (Nature Opinion) **Read** → linked to nature.com + read-only link
 - Peer-Support Meta-Analysis (NTR 2023) **PDF** → linked to OUP publisher page
 - Inner Dragon RCT (JMIR 2024) **PDF** → linked to jmir.org
 - Upping Uptake (Nature HB 2021) **PDF** → linked to nature.com
 - Acceptability of Contact Tracing (JMIR 2020) **PDF** → linked to mhealth.jmir.org
+- Stochastic Dominance **Slides** → `surprisev5.pdf`
+- Pre-registration **PDF** → linked to co-author's site + MetaArXiv
+- Pre-registration **Slides** → linked to BITSS YouTube talk
+- Pre-registration **Survey** → `PAP_survey.pdf`
+- Pre-registration **Appendix** → linked to co-author's site
+- Pre-registration **PAP** → linked to OSF
+- Open Science **PDF** → linked to MetaArXiv preprint
+- Peer Review in Economics → folded under Open Science card with Project Site + VoxEU links
 
 ---
 
