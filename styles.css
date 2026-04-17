@@ -825,6 +825,27 @@ footer {
     margin-top: 4rem;
 }
 
+.footer-line {
+    margin: 0;
+}
+
+.footer-favicon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-favicon-light {
+    filter: brightness(0) invert(1);
+}
+
+.footer-credit {
+    margin-top: 0.45rem;
+    font-size: 0.85rem;
+    color: rgba(248, 244, 232, 0.72);
+}
+
 footer a {
     color: var(--coral-light);
     text-decoration: none;
