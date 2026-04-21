@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media | Séverine Toussaert</title>
+    <title>Outreach | Séverine Toussaert</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon-footer.png">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Séverine Toussaert</a>
+            <a href="index.html" class="logo" aria-label="Home">
+                <img src="favicon-footer.png" alt="" width="28" height="28">
+            </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="cv.html">CV</a></li>
-                <li><a href="media.html" class="active">Media</a></li>
+                <li><a href="media.html" class="active">Outreach</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <h2 class="section-header">Podcast & Media</h2>
+        <h2 class="section-header">Outreach</h2>
 
         <p class="media-intro">
-            I'm passionate about sharing the hidden side of research--the trials, errors, and lessons that usually stay behind the scenes. Here are my ongoing projects exploring the real stories behind academic work.
+            I'm passionate about sharing the hidden side of research and helping others navigate the challenges of academic life. These projects span podcasts, seminars, mentoring, and workshops--all aimed at making academia more transparent and supportive.
         </p>
+
+        <!-- Podcast & Seminars -->
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 1.5rem; margin-top: 2rem;">Podcast & Seminars</h3>
 
         <div class="media-grid">
             <div class="media-card">
@@ -47,38 +53,80 @@
             </div>
         </div>
 
+        <!-- At Oxford -->
         <div style="margin-top: 3rem;">
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1.5rem;">At Oxford</h3>
-            <p style="color: var(--warm-gray); margin-bottom: 1.5rem;">Activities I run or take part in at Oxford, around academic community and wellbeing.</p>
-            <div class="media-grid">
-                <div class="media-card">
-                    <div class="media-card-image">🏛️</div>
-                    <div class="media-card-content">
-                        <h3>James Maynard, Fields Medalist: Behind the Scenes</h3>
-                        <p>An in-person Behind-the-Scenes Seminar at St John's College, Oxford — the same format as the online series but hosted live.</p>
-                    </div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 0.5rem;">At Oxford</h3>
+            <p style="color: var(--warm-gray); margin-bottom: 1.5rem;">Activities I run or take part in at Oxford, around academic community, wellbeing, and mentoring.</p>
+
+            <div class="paper-card" style="margin-top: 1.5rem;">
+                <h4 class="paper-title">James Maynard, Fields Medalist: Behind the Scenes</h4>
+                <p class="paper-authors">In-person Behind-the-Scenes Seminar, St John's College, Oxford</p>
+                <div class="paper-buttons">
+                    <a href="https://www.youtube.com/watch?v=Cs5Q-XfM1NI&t=411s" class="paper-btn slides" target="_blank" rel="noopener noreferrer">Watch</a>
+                    <a href="https://www.sjc.ox.ac.uk/discover/events/behind-the-scenes-james-maynard/" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">Event Page</a>
                 </div>
-                <div class="media-card">
-                    <div class="media-card-image">💡</div>
-                    <div class="media-card-content">
-                        <h3>Failing Well</h3>
-                        <p>Events exploring how academics navigate setbacks, rejection, and failure — and what it means to fail well in a research career.</p>
-                    </div>
+            </div>
+
+            <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 0.5rem; margin-top: 2rem;">Failing Well</h4>
+            <p style="color: var(--warm-gray); margin-bottom: 1.5rem;">
+                A series of events and mentoring work on failure in academia--how to deal with it, learn from it, and use it productively.
+            </p>
+
+            <div class="paper-card">
+                <h4 class="paper-title">Mentoring on Failure: A Practical Guide</h4>
+                <p class="paper-authors">Panel sessions and mentoring materials on navigating failure in academia</p>
+                <div class="paper-buttons">
+                    <a href="papers/failure_guide.pdf" class="paper-btn pdf" target="_blank" rel="noopener noreferrer">Slides</a>
                 </div>
-                <div class="media-card">
-                    <div class="media-card-image">🤝</div>
-                    <div class="media-card-content">
-                        <h3>Mentoring</h3>
-                        <p>One-on-one and group mentoring for students and early-career researchers at Oxford.</p>
-                    </div>
+            </div>
+
+            <div class="paper-card">
+                <h4 class="paper-title">Six Journal Rejections and a Major Rethink</h4>
+                <p class="paper-authors">Nature Opinion essay on what rejection histories can teach us about academic work</p>
+                <div class="paper-buttons">
+                    <a href="https://rdcu.be/eI05Y" class="paper-btn pdf" target="_blank" rel="noopener noreferrer">Read (free)</a>
+                    <a href="https://www.nature.com/articles/d41586-025-03146-w" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">Publisher</a>
                 </div>
+            </div>
+
+            <div class="paper-card">
+                <h4 class="paper-title">Productive Failure with Manu Kapur</h4>
+                <p class="paper-authors">Failing Well Series, St John's College, Oxford</p>
+                <div class="paper-buttons">
+                    <a href="https://www.youtube.com/watch?v=VPq7GRI_gh8&t=1556s" class="paper-btn slides" target="_blank" rel="noopener noreferrer">Watch</a>
+                    <a href="https://rdcu.be/eUmI0" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">Book Review</a>
+                    <a href="papers/PF_Kapur_Roll.pdf" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">Paper</a>
+                </div>
+            </div>
+
+            <div class="paper-card">
+                <h4 class="paper-title">Lessons in Failing Well: Catherine Hasted</h4>
+                <p class="paper-authors">Failing Well Series, St John's College, Oxford</p>
+                <div class="paper-buttons">
+                    <a href="papers/catherine_hasted_failing_well_slides.pdf" class="paper-btn pdf" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>
+                    <a href="https://www.sjc.ox.ac.uk/discover/events/lessons-in-failing-well-catherine-hasted/" class="paper-btn secondary" target="_blank" rel="noopener noreferrer">Event Page</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workshops -->
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 1rem; margin-top: 3rem;">Workshops</h3>
+
+        <div class="media-card" style="display: block;">
+            <div class="media-card-content">
+                <h3>Behavioural Science Meets Metascience</h3>
+                <p>A workshop bringing together researchers from behavioural science and metascience to explore how we can improve the way research is produced, evaluated, and shared.</p>
+                <p>Held in fall 2024.</p>
+                <a href="https://www.economics.ox.ac.uk/behavioural-science-meets-metascience" target="_blank" rel="noopener noreferrer">Workshop page &rarr;</a>
+                <br>
+                <a href="https://www.youtube.com/playlist?list=PLSsJijxGY7MoYM9AUjkGBqKxHYzO0KTBE" style="margin-top: 0.5rem; display: inline-block;" target="_blank" rel="noopener noreferrer">Watch recordings &rarr;</a>
             </div>
         </div>
 
         <div style="margin-top: 3rem; padding: 2rem; background: var(--white); border-radius: 12px;">
             <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem;">Get Involved</h3>
             <p style="color: var(--warm-gray); margin-bottom: 1rem;">
-                Interested in sharing your behind-the-scenes story? We're always looking for researchers willing to talk openly about their publication journeys.
+                Interested in sharing your behind-the-scenes story, or in learning more about navigating failure in academia? We'd love to hear from you.
             </p>
             <p>
                 <a href="mailto:severine.toussaert@economics.ox.ac.uk" style="color: var(--coral); text-decoration: none; font-weight: 500;">Get in touch &rarr;</a>
@@ -87,7 +135,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Séverine Toussaert &middot; <a href="mailto:severine.toussaert@economics.ox.ac.uk">severine.toussaert@economics.ox.ac.uk</a></p>
+        <p class="footer-line">&copy; 2026 Séverine Toussaert &middot; <a href="mailto:severine.toussaert@economics.ox.ac.uk">severine.toussaert@economics.ox.ac.uk</a></p>
+        <p class="footer-credit">Site by Joseph Levine and Claude Code.</p>
     </footer>
 </body>
 </html>
